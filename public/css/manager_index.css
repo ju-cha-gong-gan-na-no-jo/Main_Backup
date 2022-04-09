@@ -1,0 +1,26 @@
+.area{
+  margin-top : 10%;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+
+.remaining_seats{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 1000px;
+}
+
+.pay{
+  display: flex;
+  gap: 10px;
+}
+
+.cal{
+
+}
+
+.cal2{
+    display: inline-block;
+
+}

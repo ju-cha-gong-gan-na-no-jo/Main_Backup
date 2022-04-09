@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/css/box.css"/>
+<link rel="stylesheet" href="/css/sb.css"/>
+<link rel="stylesheet" href="/css/pubox.css"/>
+<link rel="stylesheet" href="/css/pu.css"/>
+<link rel="stylesheet" href="/css/day.css"/>
+<link rel="stylesheet" href="/css/search.css"/>
+<link rel="stylesheet" href="/js/search.js"/>
+<link rel="stylesheet" href="/js/day.js"/>
+<link rel="stylesheet" href="/css/manager_index.css"/>
+
+<style>
+  ::-webkit-scrollbar{width: 8px; height: 8px;}
+  ::-webkit-scrollbar-track{background-color: #ffffff;}
+  ::-webkit-scrollbar-thumb{background-color: #D3D3D3; border-radius: 7px;}
+
+
+</style>
+
+
+
+
+</head>
+<%-include('../top.ejs')%>
+<%-include('../setmenu.ejs')%>
+<body>
+  <div class="remaining_seats">
+<div>
+  <div style="margin-top: 150px;width:285px; height:80px; background-color:#fff;   box-shadow: 0px 3px 6px #00000029;  z-index:1;margin-left: 1000px;">
+    <!-- <div style="width:75px; height:75px; margin-left: 20px;  border-radius:50%; background:#D3D3D3; z-index:2;"/> -->
+    <img style="width:75px; margin-top: 3px; height:75px; margin-left: 20px;  border-radius:50%; background:#D3D3D3; z-index:2;" src="/img/payment.png" />
+    <iframe scrolling="no" frameBorder="0" style=" margin-top: -85px; margin-left: 90px; z-index:3;" src="http://15.165.153.54:3000/content/current_payment">
+    </iframe>
+  </div>
+</div>
+
+
+<div class="cal" style=" margin-top: 300px;">
+<!-- 셀렉트박스 -->
+              <div class="cal2" style="margin-left: -1050px;">
+                <select style="border-radius: 15px;">
+                      <option> 전체  </option>
+                      <option> <a href="http://15.165.153.54:3000/content/settlement_store" target="iframe_target">상점</a></option>
+                      <option> 개인 </option>
+
+                  </select>
+              </div>
+
+
+              <!-- 달력 -->
+
+                        <div class="cal2" style="margin-left: 10%;">
+                                    <label  class="nativeDatePicker">
+                                      <input type="date" name="bday">
+                                      <span class="validity"></span>
+                                    </label>
+
+                                    <fieldset class="fallbackDatePicker" hidden>
+                                      <legend class="fallbackLabel">Enter your birthday:</legend>
+
+                                      <label>
+                                        Day:
+                                        <select name="day"></select>
+                                      </label>
+
+                                      <label>
+                                        Month:
+                                        <select name="month">
+                                          <option>January</option>
+                                          <option>February</option>
+                                          <option>March</option>
+                                          <option>April</option>
+                                          <option>May</option>
+                                          <option>June</option>
+                                          <option>July</option>
+                                          <option>August</option>
+                                          <option>September</option>
+                                          <option>October</option>
+                                          <option>November</option>
+                                          <option>December</option>
+                                        </select>
+                                      </label>
+
+                                      <label>
+                                        Year:
+                                        <select name="year"></select>
+                                      </label>
+                                    </fieldset>
+
+                        </div>
+
+
+
+                        <!-- 검색 -->
+
+                        <div class="cal2" style="margin-left: 270%;">
+                          <span class='green_window'>
+                              <button type="button" class='search-bar' value="검색" onclick="myFunction()"><img src="/img/search.png" style="width: 30px;   height: 25px;"></button>
+                            <input id="text" style="margin-left: 20px;margin-top: 3px; border:none;" type="text" name="search"  onkeydown="enterSearch()" />
+
+                          </span>
+                        </div>
+
+
+
+
+                        <!-- 검색 -->
+
+                        <div class="cal2" style="margin-left: 1%;">
+                          <span class='green_window'>
+                              <button type="button" class='search-bar' value="검색" onclick="myFunction()"><img src="/img/search.png" style="width: 30px;   height: 25px;"></button>
+                            <input id="text" style="margin-left: 20px;margin-top: 3px; border:none;" type="text" name="search"  onkeydown="enterSearch()" />
+
+                          </span>
+                        </div>
+
+
+<div>
+  <iframe  name="iframe_target" scrolling="no" frameBorder="0" style="margin-top:25px; margin-left:-1060px; width: 1200px;  height:350px;" src="http://15.165.153.54:3000/content/settlement_all">
+  </iframe>
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

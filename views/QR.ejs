@@ -1,0 +1,120 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jsQR Demo</title>
+
+  <script src="./js/jsQR.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+
+  <style>
+	@font-face {
+	    font-family: 'SpoqaHanSansNeo-Regular';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	@font-face {
+	        font-family: 'GmarketSansMedium';
+	        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	        font-weight: normal;
+	        font-style: normal;
+	    }
+
+      #footer{
+        position: fixed;
+        background-color: red; /*임의색상*/
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 6rem;
+      }
+
+      #contetns{
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 6rem;
+      }
+    #githubLink {
+      position: absolute;
+      right: 0;
+      top: 12px;
+      color: #2D99FF;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 40px;
+    }
+
+    #loadingMessage {
+      text-align: center;
+
+      background-color: #fff;
+    }
+
+    #canvas {
+      width: 100%;
+    }
+
+    #output {
+      margin-top: 20px;
+      background: #fff;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+
+    #output div {
+      padding-bottom: 10px;
+      word-wrap: break-word;
+    }
+
+    #noQRFound {
+      text-align: center;
+    }
+		.cc{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: #20A8D8;
+      margin-top: 10px;
+		}
+
+  </style>
+</head>
+
+<body style="font-family: 'SpoqaHanSansNeo-Regular', sans-serif;
+color: #333;
+max-width: 640px;
+margin: 0 auto;
+position: relative;">
+
+
+    <img style=" display: block; margin: 10px auto;weight:100px; height:100px;" src="img/logo1.png" />
+
+<a style="display: block; background: linear-gradient(to left, #629ECF, #735B92); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size:20px; font-weight: bolder; text-align: center; font-family:  'GmarketSansMedium';">	QR코드를 인식해주세요.</a>
+  <!-- <div id="loadingMessage">
+
+						<br><br><br>
+						<a style="font-size:15px;  font-weight: bolder; font-family:  'SpoqaHanSansNeo-Regular;'">	🎥 비디오 스트림에 액세스 할 수 없습니다<br/>웹캠이 활성화되어 있는지 확인하십시오</a>
+</div> -->
+
+
+
+
+  <div>
+    <a href='http://15.165.153.54:3000/payment_QR_end'>
+<img src="/img/QRcode.png" width="600px">
+</a>
+</div>
+
+<img style="border-radius:50%; background:#20A8D8; z-index:2; width:80px; height:80px;margin-top: 3px;margin-left: 30px;display: inline;" src="/img/phone.png" />
+<img style="border-radius:50%; background:#20A8D8; z-index:2; width:80px; height:80px;margin-top: 3px;margin-left: 390px;display: inline;" src="/img/home.png" />
+    <!-- <div id="contents" class="cc"/><div style=" margin-left: 550%; " class="cc"/> -->
+
+    <br><br><br><br><br>
+</body>
+
+
+</html>
